@@ -1,7 +1,7 @@
 <template>
   
   <button @click="start" :disabled="isPlaying">Play</button>
-  <h1>Ninja Reaction Timer</h1>
+  <h1>Reaction Timer</h1>
   <block v-if="isPlaying" v-bind:delay = "delay" @end="endGame"/>
   <results v-if="showResults" :score="score"/>
   <block/>
